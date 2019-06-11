@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import { Router } from '@reach/router';
 
-const App: React.FC = () => {
+import { Layout } from './components/Layout';
+import { Navbar } from './components/Navbar';
+
+import { MyProfile } from './pages/MyProfile';
+import { PersonalInfo } from './pages/PersonalInfo';
+import { MyServices } from './pages/MyServices';
+
+import './styles/App.scss';
+
+const MyProfilePage = (_props: any) => <MyProfile />;
+const PersonalInfoPage = (_props: any) => <PersonalInfo />
+const MyServicesPage = (_props: any) => <MyServices />
+
+const App: React.FunctionComponent = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        <Navbar />
+        <Router>
+          <MyProfilePage path="/" />
+          <PersonalInfoPage path="/personal-info" />
+          <MyServicesPage path="/services" />
+        </Router>
+      </Layout>
     </div>
   );
 }

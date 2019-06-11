@@ -1,0 +1,59 @@
+// General
+$accent: #da291c;
+$hovered-text: #000;
+$base-text: #000;
+$base-bg: #fff;
+$hovered-bg: #fff;
+
+$base-border: #000;
+$hovered-border: #000;
+$border-radius: 0;
+
+$padding-x: 16px;
+$padding-y: 14px;
+
+// Buttons
+$button-padding-x: 20px;
+$button-padding-y: 10px;
+
+// Tabstrip
+$tabstrip-item-text: #000;
+$tabstrip-item-selected-text: #da291c;
+$tabstrip-content-border: transparent;
+$tabstrip-content-padding-y: 16px;
+$tabstrip-item-padding-x: 0;
+$tabstrip-item-padding-y: 16px;
+
+// Grid
+$grid-bg: #efefef;
+$grid-text: #000;
+$grid-border: #fff;
+$grid-alt-bg: #efefef;
+$grid-hovered-bg: $grid-bg;
+$grid-hovered-text: $grid-text;
+$grid-hovered-border: $grid-border;
+$grid-padding-y: 4px;
+
+$grid-header-bg: #aaaaaa;
+$grid-header-text: #fff;
+$grid-header-padding-x: 8px;
+$grid-header-padding-y: 16px;
+
+// DatePicker
+$calendar-header-padding-x: 16px;
+$calendar-header-padding-y: 4px;
+
+// Tooltip
+$tooltip-bg: #000;
+
+@import "~@progress/kendo-theme-default/scss/tabstrip.scss";
+@import "~@progress/kendo-theme-default/scss/button.scss";
+@import "~@progress/kendo-theme-default/scss/input.scss";
+@import "~@progress/kendo-theme-default/scss/dropdownlist.scss";
+@import "~@progress/kendo-theme-default/scss/popup.scss";
+@import "~@progress/kendo-theme-default/scss/grid.scss";
+@import "~@progress/kendo-theme-default/scss/dataviz.scss";
+@import "~@progress/kendo-theme-default/scss/calendar.scss";
+@import "~@progress/kendo-theme-default/scss/datetime.scss";
+@import "~@progress/kendo-theme-default/scss/tooltip.scss";
+@import "~@progress/kendo-theme-default/scss/dialog.scss";

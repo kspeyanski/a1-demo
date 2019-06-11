@@ -1,0 +1,109 @@
+@import "./kendo-theme-a1.scss";
+@import "./navbar.scss";
+
+.content {
+  margin-top: 6rem;
+}
+
+.k-tabstrip {
+  font-size: 17px;
+
+  .k-tabstrip-items {
+    text-transform: none;
+
+    .k-item,
+    .k-item + .k-item {
+      margin-left: 0.75rem;
+      margin-right: 0.75rem;
+
+      &.k-state-active {
+        border: 0;
+        border-bottom: 4px solid $accent;
+      }
+    }
+  }
+}
+
+.k-grid.no-header {
+  thead,
+  .k-grid-header {
+    display: none;
+  }
+}
+
+.k-grid.custom-detail {
+  .k-detail-cell {
+    border: 1px solid #efefef;
+    border-top-width: 0;
+  }
+
+  .expand-cell {
+    border: 1px solid #efefef;
+    border-bottom-width: 0;
+  }
+}
+
+.loader-spinner {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+
+.k-animation-container {
+  display: block;
+}
+
+#services {
+  position: relative;
+
+  .k-tabstrip.tabstrip-root {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    & > .k-content {
+      padding-top: 0;
+    }
+
+    & > .k-tabstrip-items {
+      justify-content: flex-end;
+      border: 0;
+
+      .k-link {
+        padding: 0;
+      }
+
+      .k-item {
+        margin: 0;
+        padding: 8px 32px;
+
+        &.k-state-active {
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+.modal-content-wrapper {
+  width: 40%;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+
+  &::before {
+    content: none;
+  }
+}
+
+.k-button.k-outline {
+  border: 1px solid $accent;
+
+  &:hover {
+    background-color: $accent;
+    border-color: $accent;
+    color: #fff;
+  }
+}
