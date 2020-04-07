@@ -46,14 +46,18 @@ $calendar-header-padding-y: 4px;
 // Tooltip
 $tooltip-bg: #000;
 
-@import "~@progress/kendo-theme-default/scss/tabstrip.scss";
-@import "~@progress/kendo-theme-default/scss/button.scss";
-@import "~@progress/kendo-theme-default/scss/input.scss";
-@import "~@progress/kendo-theme-default/scss/dropdownlist.scss";
-@import "~@progress/kendo-theme-default/scss/popup.scss";
-@import "~@progress/kendo-theme-default/scss/grid.scss";
-@import "~@progress/kendo-theme-default/scss/dataviz.scss";
-@import "~@progress/kendo-theme-default/scss/calendar.scss";
-@import "~@progress/kendo-theme-default/scss/datetime.scss";
-@import "~@progress/kendo-theme-default/scss/tooltip.scss";
-@import "~@progress/kendo-theme-default/scss/dialog.scss";
+@import "~@progress/kendo-theme-default/scss/functions/_index.scss";
+@import "~@progress/kendo-theme-default/scss/mixins/_index.scss";
+@import "~@progress/kendo-theme-default/scss/_variables.scss";
+
+@import "~@progress/kendo-theme-default/scss/tabstrip/_index.scss";
+@import "~@progress/kendo-theme-default/scss/button/_index.scss";
+@import "~@progress/kendo-theme-default/scss/input/_index.scss";
+@import "~@progress/kendo-theme-default/scss/dropdownlist/_index.scss";
+@import "~@progress/kendo-theme-default/scss/popup/_index.scss";
+@import "~@progress/kendo-theme-default/scss/grid/_index.scss";
+@import "~@progress/kendo-theme-default/scss/dataviz/_index.scss";
+@import "~@progress/kendo-theme-default/scss/calendar/_index.scss";
+@import "~@progress/kendo-theme-default/scss/datetime/_index.scss";
+@import "~@progress/kendo-theme-default/scss/tooltip/_index.scss";
+@import "~@progress/kendo-theme-default/scss/dialog/_index.scss";
