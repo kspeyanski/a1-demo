@@ -46,9 +46,9 @@ $calendar-header-padding-y: 4px;
 // Tooltip
 $tooltip-bg: #000;
 
+@import "~@progress/kendo-theme-default/scss/_variables.scss";
 @import "~@progress/kendo-theme-default/scss/functions/_index.scss";
 @import "~@progress/kendo-theme-default/scss/mixins/_index.scss";
-@import "~@progress/kendo-theme-default/scss/_variables.scss";
 
 @import "~@progress/kendo-theme-default/scss/tabstrip/_index.scss";
 @import "~@progress/kendo-theme-default/scss/button/_index.scss";
